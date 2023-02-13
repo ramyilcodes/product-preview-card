@@ -1,0 +1,141 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* General styles */
+body {
+  background-color: hsl(30, 38%, 92%);
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+}
+
+p {
+  line-height: 1.5em;
+}
+
+h1 {
+  margin-bottom: 0.5em;
+}
+
+.container {
+  margin: 8% auto;
+  max-width: 42em;
+  display: flex;
+}
+
+/* Styles for the image */
+img[id="image"] {
+  width: 21em;
+  border-radius: 9px 0 0 9px;
+}
+
+picture {
+  max-height: 236px;
+}
+
+/* Styles description section */
+.description {
+  width: 21em;
+  padding: 2.5em;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0 9px 9px 0;
+  max-height: 441px;
+}
+
+.description h1 {
+  font-family: "Fraunces", serif;
+  color: hsl(212, 21%, 14%);
+  line-height: 1em;
+  font-size: 2.5em;
+}
+
+.description p {
+  margin-bottom: 1em;
+}
+
+#heading {
+  letter-spacing: 5px;
+  font-size: 13px;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+
+  justify-content: flex-start;
+  margin-top: 1.5em;
+}
+
+#price {
+  font-family: "Fraunces", serif;
+  font-size: 30px;
+  color: hsl(158, 36%, 37%);
+  margin-right: 0.5em;
+}
+
+#old-price {
+  text-decoration: line-through;
+  font-size: 13px;
+}
+
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 0 3em;
+  height: 3em;
+  width: 100%;
+  border-radius: 7px;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  border: 0;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: hsl(158, 78%, 16%);
+}
+
+#icon {
+  margin-inline: 0 1em;
+}
+
+/* Design for mobile */
+@media screen and (max-width: 600px) {
+
+  img[id="image"] {
+    border-radius: 9px 9px 0 0;
+    width: 24em;
+  }
+
+  p,
+  h1 {
+    margin-bottom: 0.5em;
+  }
+
+  .container {
+    flex-direction: column;
+    width: 24em;
+  }
+
+  .description {
+    border-radius: 0 0 9px 9px;
+    width: 24em;
+    padding: 1.5em;
+  }
+
+  .price-container {
+    margin-top: 1em;
+  }
+
+}
