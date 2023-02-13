@@ -33,7 +33,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ### Links
 
 - Solution URL: [Github](https://github.com/ramyilcodes/product-preview-card.git)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Netlify](https://ramyil-product-preview-card.netlify.app/)
 
 
 ### Built with
